@@ -3,226 +3,278 @@
     <head>
 
         <title>Follow Up Survery</title>
-        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/styles.css">
         <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
 
     </head>
 
     <body>
-        
-        <div class="container">
-            
-            <div class="small_container">
-                <p>Follow Up Survey</p>
-            </div>
-
-            <div class="page_container">
-
-                <div class="flex space-evenly">
-                    <div class="service">
-                        <div>
-                            <p>When did you use our service?</p>
-                        </div>
-                        
-                        <div>
-                            <input type="date" value="2022-08-30" class="date">
-                        </div>
-                        
-                        <div>
-                            <p class="date_text">Date</p>
-                        </div>
-                        
-                    </div>
-
-                    <div class="product-service">
-                        <div>
-                            <p>Name of product or service</p>
-                        </div>
-
-                        <div>
-                            <input type="text" class="text"><br>
-                        </div>
-                    </div>
-                </div>
+        <div class="flex center">
+            <div class="container">
                 
+                <div class="small_container">
+                    <p>Follow Up Survey</p>
+                </div>
 
-                <form>
-                    
-                    <div>
-                        <div class="flex shrink-0">
-                            <p class="question">Overall, how satisfied are you with the product or service?</p>
+                <div class="page_container">
+
+                    <div class="flex space-evenly">
+                        <div>
+                            <div>
+                                <p class="service">When did you use our service?</p>
+                            </div>
+                            
+                            <div>
+                                <input type="date" value="2022-08-30" class="date">
+                            </div>
+                            
+                            <div>
+                                <p class="date_text">Date</p>
+                            </div>
+                            
                         </div>
 
-                        <div class="flex space-around">
-                            <div class="flex column">
-                                <div>
-                                    <input type="radio" name="product_satisfaction" class="product_satisfaction">
-                                    <label for="very_satisfied">Very satisfied</label>
-                                </div>
-
-                                <div>
-                                    <input type="radio" name="product_satisfaction" class="product_satisfaction">
-                                    <label for="neutral">Neutral</label>
-                                </div>
-                                
-                                <div>
-                                    <input type="radio" name="product_satisfaction" class="product_satisfaction">
-                                    <label for="very_unsatisfied">Very unsatisfied</label>
-                                </div>
+                        <div>
+                            <div>
+                                <p class="product-service">Name of product or service</p>
                             </div>
 
-                            <div class="flex column">
-                                <div>
-                                    <input type="radio" name="product_satisfaction" class="product_satisfaction">
-                                    <label for="satisfied">Satisfied</label>
-                                </div>
-                                
-                                <div>
-                                    <input type="radio" name="product_satisfaction" class="product_satisfaction">
-                                    <label for="unsatisfied">Unsatisfied</label>
-                                </div>
+                            <div>
+                                <input type="text" class="text"><br>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <form>
+                        
+                        <div>
+                            <div class="flex">
+                                <div class="grow-1"></div>
+                                <p class="question grow-2">Overall, how satisfied are you with the product or service?</p>
+                            </div>
+
+                            <div class="flex">
+                                <div class="item grow-1"></div>
+                                <div class="flex column grow-2">
+                                    <div>
+                                        <input type="radio" name="product_satisfaction" class="product_satisfaction">
+                                        <label for="very_satisfied">Very satisfied</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" name="product_satisfaction" class="product_satisfaction">
+                                        <label for="neutral">Neutral</label>
+                                    </div>
                                     
-                                <div>
-                                    <input type="radio" name="product_satisfaction" class="product_satisfaction">
-                                    <label for="n/a">N/A</label>
+                                    <div>
+                                        <input type="radio" name="product_satisfaction" class="product_satisfaction">
+                                        <label for="very_unsatisfied">Very unsatisfied</label>
+                                    </div>
                                 </div>
+
+                                <div class="item grow-1"></div>
+
+                                <div class="flex column grow-2">
+                                    <div>
+                                        <input type="radio" name="product_satisfaction" class="product_satisfaction">
+                                        <label for="satisfied">Satisfied</label>
+                                    </div>
                                     
+                                    <div>
+                                        <input type="radio" name="product_satisfaction" class="product_satisfaction">
+                                        <label for="unsatisfied">Unsatisfied</label>
+                                    </div>
+                                        
+                                    <div>
+                                        <input type="radio" name="product_satisfaction" class="product_satisfaction">
+                                        <label for="n/a">N/A</label>
+                                    </div>
+                                        
+                                </div>
+                                <div class="item grow-1"></div>
                             </div>
                         </div>
-                    </div>
 
 
-                    <div>
                         <div>
-                            <p class="question">Did our product or service meet your expectations?</p>
-                        </div>
-
-                        <div class="flex space-around">
-                            <div class="flex column">
-                                <div>
-                                    <input type="radio" name="product_expectation" class="product_expectation">
-                                    <label for="yes">Yes</label>
-                                </div>
+                            <div class="flex">
+                                <div class="grow-1"></div>
+                                <p class="question grow-2">Did our product or service meet your expectations?</p>
+                                <div class="item"></div>
                             </div>
 
-                            <div class="flex column">
-                                <div>
-                                    <input type="radio" name="product_expectation" class="product_expectation" checked>
-                                    <label for="no">No</label>
+                            <div class="flex">
+                                <div class="item grow-1"></div>
+
+                                <div class="flex column grow-2">
+                                    <div>
+                                        <input type="radio" name="product_expectation" class="product_expectation">
+                                        <label for="yes">Yes</label>
+                                    </div>
                                 </div>
+
+                                <div class="item"></div>
+                                <div class="item grow-2"></div>
+                                <div class="item"></div>
+
+                                <div class="flex column grow-2">
+                                    <div>
+                                        <input type="radio" name="product_expectation" class="product_expectation" checked>
+                                        <label for="no">No</label>
+                                    </div>
+                                </div>
+
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item grow-1"></div>
                             </div>
                         </div>
-                    </div>
 
 
-                    <div>
                         <div>
-                            <p class="question">Would you recommend this product or service to a friend?</p>
-                        </div>
-
-                        <div class="flex space-around">
-                            <div class="flex column">
-                                <div>
-                                    <input type="radio" name="product_recommendation" class="product_recommendation">
-                                    <label for="yes">Yes</label>
-                                </div>
+                            <div class="flex">
+                                <div class="grow-1"></div>
+                                <p class="question grow-2">Would you recommend this product or service to a friend?</p>
                             </div>
 
-                            <div class="flex column">
-                                <div>
-                                    <input type="radio" name="product_recommendation" class="product_recommendation" checked>
-                                    <label for="no">No</label>
+                            <div class="flex">
+                                <div class="item grow-1"></div>
+
+                                <div class="flex column grow-2">
+                                    <div>
+                                        <input type="radio" name="product_recommendation" class="product_recommendation">
+                                        <label for="yes">Yes</label>
+                                    </div>
                                 </div>
+
+                                <div class="item"></div>
+                                <div class="item grow-2"></div>
+                                <div class="item"></div>
+
+                                <div class="flex column grow-2">
+                                    <div>
+                                        <input type="radio" name="product_recommendation" class="product_recommendation" checked>
+                                        <label for="no">No</label>
+                                    </div>
+                                </div>
+
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item grow-1"></div>
                             </div>
                         </div>
-                    </div>
-                    
-                    
-                    <div>
+                        
+                        
                         <div>
-                            <p class="question">What aspect of the product or service were you most satisfied by?</p>
-                        </div>  
+                            <div class="flex">
+                                <div class="grow-1"></div>
+                                <div class="item"></div>
+                                <p class="question grow-2">What aspect of the product or service were you most satisfied by?</p>
+                            </div>  
 
-                         <div class="flex space-around">
-                            <div class="flex column">
-                                <div>
-                                    <input type="radio" name="most_satisfied" class="most_satisfied">
-                                    <label for="quality">Quality</label>
+                            <div class="flex">
+                                <div class="item grow-1"></div>
+                                <div class="item"></div>
+
+                                <div class="flex column grow-2">
+                                    <div>
+                                        <input type="radio" name="most_satisfied" class="most_satisfied">
+                                        <label for="quality">Quality</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" name="most_satisfied" class="most_satisfied">
+                                        <label for="customer_service">Customer service</label>
+                                    </div>
                                 </div>
 
-                                <div>
-                                    <input type="radio" name="most_satisfied" class="most_satisfied">
-                                    <label for="customer_service">Customer service</label>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item grow-1"></div>
+
+                                <div class="flex column">
+                                    <div>
+                                        <input type="radio" name="most_satisfied" class="most_satisfied">
+                                        <label for="price">Price</label>
+                                    </div>
+                                    
+                                    <div>
+                                        <input type="radio" name="most_satisfied" class="most_satisfied">
+                                        <label for="experience">Installation or first use experience</label>
+                                    </div>  
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="flex column">
-                                <div>
-                                    <input type="radio" name="most_satisfied" class="most_satisfied">
-                                    <label for="price">Price</label>
+
+                        <div>
+                            <div class="flex">
+                                <div class="grow-1"></div>
+                                <div class="item"></div>
+                                <p class="question grow-2">What aspect of the product or service were you least satisfied by?</p>
+                            </div>   
+
+                            <div class="flex">
+                                <div class="item grow-1"></div>
+                                <div class="item"></div>
+                                <div class="flex column grow-2">
+                                    <div>
+                                        <input type="radio" name="least_satisfied" class="least_satisfied">
+                                        <label for="quality">Quality</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" name="least_satisfied" class="least_satisfied">
+                                        <label for="customer_service">Customer service</label>
+                                    </div>
                                 </div>
+
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item grow-2"></div>
+
+                                <div class="flex column">
+                                    <div>
+                                        <input type="radio" name="least_satisfied" class="least_satisfied">
+                                        <label for="price">Price</label>
+                                    </div>
+                                    
+                                    <div>
+                                        <input type="radio" name="least_satisfied" class="least_satisfied">
+                                        <label for="experience">Installation or first use experience</label>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div>
+                            <div class="flex">
+                                <div class="grow-1"></div>
                                 
-                                <div>
-                                    <input type="radio" name="most_satisfied" class="most_satisfied">
-                                    <label for="experience">Installation or first use experience</label>
-                                </div>  
+                                <p class="additional_comment grow-2">Additional comments:</p>
+                                <div class="item grow-1"></div>
+                                <div class="item grow-1"></div>
+                                <!-- <div class="item"></div> -->
+                            </div>
+                            <div class="flex center">
+                                <div class="item grow-2"></div>
+                                <div class="item grow-2"></div>
+                                <textarea class="grow-2" placeholder="Type here..."></textarea>
+                                <div class="item grow-1"></div>
                             </div>
                         </div>
-                    </div>
 
 
-                    <div>
-                        <div>
-                            <p class="question flex space-around">What aspect of the product or service were you least satisfied by?</p>
-                        </div>   
-
-                        <div class="flex space-around">
-                            <div class="flex column">
-                                <div>
-                                    <input type="radio" name="least_satisfied" class="least_satisfied">
-                                    <label for="quality">Quality</label>
-                                </div>
-
-                                <div>
-                                    <input type="radio" name="least_satisfied" class="least_satisfied">
-                                    <label for="customer_service">Customer service</label>
-                                </div>
-                            </div>
-
-                            <div class="flex column">
-                                <div>
-                                    <input type="radio" name="least_satisfied" class="least_satisfied">
-                                    <label for="price">Price</label>
-                                </div>
-                                
-                                <div>
-                                    <input type="radio" name="least_satisfied" class="least_satisfied">
-                                    <label for="experience">Installation or first use experience</label>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    <div>
-                        <div>
-                            <p class="additional_comment">Additional comments:</p>
-                        </div>
                         <div class="flex center">
-                            <textarea placeholder="Type here..."></textarea>
+                            <input type="submit" class="submit">
                         </div>
-                    </div>
+                        
+                    </form>
+                </div>
 
-
-                    <div class="flex center">
-                        <input type="submit" class="submit">
-                    </div>
-                    
-
-                </form>
             </div>
-
         </div>
-        
     </body>
 </html>
