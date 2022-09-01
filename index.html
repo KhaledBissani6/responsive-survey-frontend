@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SE-FlexBox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>FlexBox Example</h1>
+        <p>Flex (By Default Flex-start)</p>
+        <div class="flex">
+            <div class="item"><p>1</p></div>
+            <div class="item"><p>2</p></div>
+            <div class="item"><p>3</p></div>
+        </div>
+
+        <!--        Placing all the children items in the center of the parent-->
+        <p>Center Flex</p>
+        <div class="flex center">
+            <div class="item"><p>1</p></div>
+            <div class="item"><p>2</p></div>
+            <div class="item"><p>3</p></div>
+        </div>
+
+        <!--        Placing all the children items in the end of the parent-->
+        <p>Flex End</p>
+        <div class="flex flex-end">
+            <div class="item"><p>1</p></div>
+            <div class="item"><p>2</p></div>
+            <div class="item"><p>3</p></div>
+        </div>
+
+        <p>Space Evenly Flex</p>
+        <div class="flex flex-space-evenly">
+            <div class="item"><p>1</p></div>
+            <div class="item"><p>2</p></div>
+            <div class="item"><p>3</p></div>
+        </div>
+
+        <p>Space Around Flex</p>
+        <div class="flex flex-space-around">
+            <div class="item"><p>1</p></div>
+            <div class="item"><p>2</p></div>
+            <div class="item"><p>3</p></div>
+        </div>
+
+
+        <p>Space Between Flex</p>
+        <div class="flex flex-space-between">
+            <div class="item"><p>1</p></div>
+            <div class="item"><p>2</p></div>
+            <div class="item"><p>3</p></div>
+            <div class="item"><p>4</p></div>
+        </div>
+
+        <!--Specify the ratio of growth of an item relative the other items-->
+        <p>Flex Grow (Default 0)</p>
+        <div class="flex">
+            <div class="item grow-2"><p>1</p></div>
+            <div class="item grow"><p>2</p></div>
+            <div class="item"><p>3</p></div>
+        </div>
+
+        <p>Flex Grow 2 (Default 0)</p>
+        <div class="flex">
+            <div class="item grow-2"><p>1</p></div>
+            <div class="item grow"><p>2</p></div>
+        </div>
+
+        <!--Specify the ability of an item to shrink relative the other items-->
+        <!--Ex: Shrink 0 means the item will never shrink, Shrink 2 means the item will shrink twice as much as the other items-->
+        <p>Flex Shrink (Default 1) (Try on a mobile screen width to see the effect)</p>
+        <div class="flex">
+            <div class="item shrink-0"><p>1</p></div>
+            <div class="item"><p>2</p></div>
+            <div class="item"><p>3</p></div>
+            <div class="item"><p>4</p></div>
+        </div>
+
+        <p>Flex Basis (Default auto)</p>
+        <div class="flex">
+            <div class="item basis-10"><p>1</p></div>
+            <div class="item basis-20"><p>2</p></div>
+            <div class="item basis-40"><p>3</p></div>
+            <div class="item grow"><p>4</p></div>
+        </div>
+
+        <p>Vertical Flex</p>
+        <div class="flex dir-column">
+            <div class="item"><p>1</p></div>
+            <div class="item"><p>2</p></div>
+            <div class="item"><p>3</p></div>
+            <div class="item"><p>4</p></div>
+        </div>
+
+
+        <p>Vertical Flex With Grow</p>
+        <div class="flex dir-column h-500">
+            <div class="item"><p>1</p></div>
+            <div class="item"><p>2</p></div>
+            <div class="item"><p>3</p></div>
+            <div class="item grow"><p>4</p></div>
+        </div>
+        <p>Vertical Flex Center</p>
+        <div class="flex dir-column align-items-center">
+            <div class="item"><p>1</p></div>
+            <div class="item"><p>2</p></div>
+            <div class="item"><p>3</p></div>
+            <div class="item"><p>4</p></div>
+        </div>
+
+        <p>Vertical Flex Self</p>
+        <div class="flex dir-column">
+            <div class="item self-center"><p>1</p></div>
+            <div class="item"><p>2</p></div>
+            <div class="item self-center"><p>3</p></div>
+            <div class="item"><p>4</p></div>
+        </div>
+
+        <!--Flex Wrap by definition "sets whether flex items are forced onto one line or can wrap onto multiple lines"-->
+        <p>Flex Wrap</p>
+        <div class="flex flex-wrap">
+            <div class="item"><p>1</p></div>
+            <div class="item"><p>2</p></div>
+            <div class="item"><p>3</p></div>
+            <div class="item"><p>4</p></div>
+            <div class="item"><p>5</p></div>
+            <div class="item"><p>6</p></div>
+            <div class="item"><p>7</p></div>
+            <div class="item"><p>8</p></div>
+            <div class="item"><p>9</p></div>
+            <div class="item"><p>10</p></div>
+            <div class="item"><p>11</p></div>
+            <div class="item"><p>12</p></div>
+            <div class="item"><p>13</p></div>
+            <div class="item"><p>14</p></div>
+            <div class="item"><p>15</p></div>
+            <div class="item"><p>16</p></div>
+            <div class="item"><p>17</p></div>
+            <div class="item"><p>18</p></div>
+            <div class="item"><p>19</p></div>
+        </div>
+
+        <p>Flex Reverse Wrap</p>
+        <div class="flex flex-wrap-reverse">
+            <div class="item"><p>1</p></div>
+            <div class="item"><p>2</p></div>
+            <div class="item"><p>3</p></div>
+            <div class="item"><p>4</p></div>
+            <div class="item"><p>5</p></div>
+            <div class="item"><p>6</p></div>
+            <div class="item"><p>7</p></div>
+            <div class="item"><p>8</p></div>
+            <div class="item"><p>9</p></div>
+            <div class="item"><p>10</p></div>
+            <div class="item"><p>11</p></div>
+            <div class="item"><p>12</p></div>
+            <div class="item"><p>13</p></div>
+            <div class="item"><p>14</p></div>
+            <div class="item"><p>15</p></div>
+            <div class="item"><p>16</p></div>
+            <div class="item"><p>17</p></div>
+            <div class="item"><p>18</p></div>
+            <div class="item"><p>19</p></div>
+        </div>
+
+
+        <p>Flex Reverse Wrap</p>
+        <div class="flex flex-wrap h-500">
+            <div class="item"><p>1</p></div>
+            <div class="item"><p>2</p></div>
+            <div class="item"><p>3</p></div>
+            <div class="item"><p>4</p></div>
+            <div class="item"><p>5</p></div>
+            <div class="item"><p>6</p></div>
+            <div class="item"><p>7</p></div>
+            <div class="item"><p>8</p></div>
+            <div class="item"><p>9</p></div>
+            <div class="item"><p>10</p></div>
+            <div class="item"><p>11</p></div>
+            <div class="item"><p>12</p></div>
+            <div class="item"><p>13</p></div>
+            <div class="item"><p>14</p></div>
+            <div class="item"><p>15</p></div>
+            <div class="item"><p>16</p></div>
+            <div class="item"><p>17</p></div>
+            <div class="item"><p>18</p></div>
+            <div class="item"><p>19</p></div>
+        </div>
+
+        <p>Perfect center positioning</p>
+        <div class="flex flex-wrap h-500 center-perfect">
+            <div class="item"></div>
+        </div>
+
+        <p>Ordering</p>
+        <div class="flex">
+            <div class="item order-2"><p>a</p></div>
+            <div class="item order-1"><p>b</p></div>
+            <div class="item order-1"><p>c</p></div>
+            <div class="item order-1"><p>d</p></div>
+            <div class="item order-3"><p>e</p></div>
+        </div>
+    </div>
+</body>
+</html>
